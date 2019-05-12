@@ -1,0 +1,19 @@
+{
+  "name": "gulp4 starter template",
+  "version": "1.0.0",
+  "description": "Starter template with gulp4 scss browser-sync normalize, autoprefixer",
+  "main": "index.js",
+  "scripts": {
+  	"start": "gulp",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "gulp4",
+    "scss",
+    "browser-sync",
+    "normalize",
+    "template"
+  ],
+  "author": "Nikolay Salinder",
+  "license": "MIT"
+}
