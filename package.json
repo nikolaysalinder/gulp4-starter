@@ -1,10 +1,10 @@
 {
-  "name": "gulp4 starter template",
+  "name": "gulp4-starter",
   "version": "1.0.0",
   "description": "Starter template with gulp4 scss browser-sync normalize, autoprefixer",
   "main": "index.js",
   "scripts": {
-  	"start": "gulp",
+    "start": "gulp",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
