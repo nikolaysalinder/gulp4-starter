@@ -6,14 +6,14 @@ const autoprefixer = require('gulp-autoprefixer');
 // const uglify = require('gulp-uglify')
 
 function style() {
-  return gulp.src('./scss/**/*.scss')
+  return gulp.src('./scss/*.scss')
       .pipe(sass().on('error', sass.logError))
       .pipe(concat('main.css'))
       .pipe(autoprefixer({
             browsers: [ 'cover 99.5%'],
             cascade: false
       }))
-      .pipe(uglify())
+      // .pipe(uglify())
       .pipe(gulp.dest('./css'))
       .pipe(browserSync.stream());
 }

@@ -1,1 +1,15 @@
 /* Here you can write  your scss code */
+@import '_normalize.scss';
+.app {
+	display: block;
+	background: black;
+	width: 300px;
+	height: 300px;
+	&__item {
+		display: block;
+		background: #c4c4c4;
+		margin: auto;
+		width: 250px;
+		height: 250px;
+	}
+}
