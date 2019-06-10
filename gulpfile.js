@@ -7,15 +7,12 @@ const autoprefixer = require('gulp-autoprefixer');
 
 function style() {
   return gulp.src('./scss/*.scss')
-      .pipe(sass().on('error', sass.logError))
-      .pipe(concat('main.css'))
-      .pipe(autoprefixer({
-            browsers: [ 'cover 99.5%'],
-            cascade: false
-      }))
-      // .pipe(uglify())
-      .pipe(gulp.dest('./css'))
-      .pipe(browserSync.stream());
+    .pipe(sass().on('error', sass.logError))
+    .pipe(concat('main.css'))
+    .pipe(autoprefixer())
+    // .pipe(uglify())
+    .pipe(gulp.dest('./css'))
+    .pipe(browserSync.stream());
 }
 
 function watch() {
